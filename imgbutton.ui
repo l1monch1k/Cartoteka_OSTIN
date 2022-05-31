@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>imgButton</class>
+ <widget class="QWidget" name="imgButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>150</width>
+    <height>181</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>150</width>
+    <height>181</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>150</width>
+    <height>181</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QToolButton" name="toolButton_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>150</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>181</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>181</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="photo.qrc">
+     <normaloff>:/img/img/photocartochka.jpg</normaloff>:/img/img/photocartochka.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>181</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="picture_button">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>8</y>
+     <width>135</width>
+     <height>139</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>128</width>
+     <height>131</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>128</width>
+     <height>131</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border-left: 0px solid #000000;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

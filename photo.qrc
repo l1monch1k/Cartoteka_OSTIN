@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/photo_2022-04-10_19-32-38.jpg</file>
+        <file>img/photocartochka.jpg</file>
+        <file>img/exit.jpg</file>
+        <file>img/acept.jpg</file>
+        <file>img/photo.png</file>
+        <file>img/search.png</file>
+        <file>img/delete.png</file>
+        <file>img/edit.png</file>
+        <file>img/add.png</file>
+        <file>img/clear.png</file>
+        <file>img/notebook_texture2462-3378803857 (2).png</file>
+        <file>img/backgroundjpg.jpg</file>
+    </qresource>
+</RCC>
