@@ -69,3 +69,5 @@ void dialog_photo::mouseMoveEvent(QMouseEvent *event)
     QPoint  mousePt = event->globalPos();
     this->move(mousePt-startPt);
 }
+
+//хуй
