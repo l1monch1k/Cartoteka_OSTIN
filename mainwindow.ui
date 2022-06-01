@@ -449,10 +449,10 @@ background-color: rgb(255, 255, 255);
              <string comment="fda" extracomment="dsafea"/>
             </property>
             <property name="text">
-             <string>Поиск...</string>
+             <string/>
             </property>
             <property name="placeholderText">
-             <string comment="gfsgf" extracomment="gfdsgr"/>
+             <string>Поиск...</string>
             </property>
             <property name="clearButtonEnabled">
              <bool>false</bool>
@@ -728,8 +728,14 @@ border-left: 2px solid #000000;</string>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>20</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
               <property name="rightMargin">
-               <number>0</number>
+               <number>5</number>
               </property>
               <item>
                <spacer name="ls_sp">
@@ -880,14 +886,19 @@ font-size: 15px;
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">QWidget{
-	
-	image: url(:/img/img/notebook_texture2462-3378803857 (2).png);
-}</string>
+                <string notr="true">QWidget#widget_10{
+	background-image: url(:/img/img/notebook_texture2462-3378803857 (2).png);
+}
+QLineEdit{
+border-radius: 5px;
+border: 0px inset #000000;
+background-color: transparent;
+}
+</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_3">
                 <property name="spacing">
-                 <number>6</number>
+                 <number>0</number>
                 </property>
                 <property name="leftMargin">
                  <number>22</number>
@@ -899,7 +910,7 @@ font-size: 15px;
                  <number>0</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>6</number>
+                 <number>0</number>
                 </property>
                 <item>
                  <widget class="QLineEdit" name="fnameBox">
@@ -916,12 +927,12 @@ font-size: 15px;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Имя</string>
                   </property>
                  </widget>
@@ -941,12 +952,12 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Фамилия</string>
                   </property>
                  </widget>
@@ -966,12 +977,12 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Отчество</string>
                   </property>
                  </widget>
@@ -991,16 +1002,22 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMethodHints">
                    <set>Qt::ImhNone</set>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Дата Рождения</string>
+                  </property>
+                  <property name="cursorMoveStyle">
+                   <enum>Qt::LogicalMoveStyle</enum>
                   </property>
                  </widget>
                 </item>
@@ -1019,12 +1036,15 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Номер телефона</string>
                   </property>
                  </widget>
@@ -1044,12 +1064,12 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Город</string>
                   </property>
                  </widget>
@@ -1069,12 +1089,12 @@ background-color: rgb(255, 255, 255);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
                    <string>Адрес проживания</string>
                   </property>
                  </widget>
@@ -1093,14 +1113,35 @@ background-color: rgb(255, 255, 255);</string>
                     <height>16777215</height>
                    </size>
                   </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
+                  </property>
+                  <property name="whatsThis">
+                   <string/>
+                  </property>
+                  <property name="accessibleName">
+                   <string/>
+                  </property>
+                  <property name="accessibleDescription">
+                   <string/>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMask">
-                   <string>.....</string>
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string comment="....." extracomment=".....">.....</string>
                   </property>
                   <property name="clearButtonEnabled">
                    <bool>true</bool>
@@ -1125,22 +1166,22 @@ background-color: rgb(255, 255, 255);</string>
                    <bool>false</bool>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border-radius: 5px;
-border: 2px inset #000000;
-color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="inputMethodHints">
                    <set>Qt::ImhNone</set>
                   </property>
                   <property name="inputMask">
-                   <string>......</string>
+                   <string/>
                   </property>
                   <property name="text">
-                   <string>......</string>
+                   <string/>
                   </property>
                   <property name="frame">
                    <bool>true</bool>
+                  </property>
+                  <property name="placeholderText">
+                   <string>......</string>
                   </property>
                   <property name="clearButtonEnabled">
                    <bool>true</bool>
@@ -1259,7 +1300,7 @@ border-top-right-radius: 11px;
                 <enum>QTabWidget::Rounded</enum>
                </property>
                <property name="currentIndex">
-                <number>1</number>
+                <number>3</number>
                </property>
                <property name="elideMode">
                 <enum>Qt::ElideNone</enum>
