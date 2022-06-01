@@ -19,12 +19,14 @@ dialog_photo::~dialog_photo()
 
 void dialog_photo::on_toolButton_2_clicked()
 {
+    //just close//
     this->close();
 }
 
 
 void dialog_photo::on_toolButton_3_clicked()
 {
+    //save and close//
     this->close();
     if(!ui->photoCard->icon().isNull())
         mw->AddNewAlbumBut(id+1);
@@ -48,26 +50,27 @@ void dialog_photo::on_photoCard_clicked()
 
 void dialog_photo::SetParams(MainWindow *w,imgButton *but, int i, QIcon icon, QString desc)
 {
-    id=i;
+    id=i; // id button
     int wid = ui->photoCard->width();
     int h = ui->photoCard->height();
     ui->photoCard->setIcon(icon);
     ui->photoCard->setIconSize(QSize(wid,h));
     ui->DescBox->setText(desc);
-    mw = w;
-    buttonId = but;
+    mw = w; // link to mainwindow
+    buttonId = but; //link to button
 }
 
 void dialog_photo::mousePressEvent(QMouseEvent *event)
 {
+    //capture start mouse pos //
     startPt = event->globalPos()-this->pos();
 }
 
 void dialog_photo::mouseMoveEvent(QMouseEvent *event)
 {
+    //func of move window //
     QPoint  winPt = this->pos();
     QPoint  mousePt = event->globalPos();
     this->move(mousePt-startPt);
 }
 
-//хуй

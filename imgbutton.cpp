@@ -28,8 +28,8 @@ void imgButton::on_toolButton_5_clicked()
 
 void imgButton::SetParams(MainWindow *w, int i)
 {
-    mw = w;
-    id = i;
+    mw = w; //link to mainwindow
+    id = i; //id button
 
 }
 
