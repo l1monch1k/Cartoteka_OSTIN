@@ -6,26 +6,35 @@
 #include <QFileDialog>
 #include "dialog_photo.h"
 #include "imgbutton.h"
-#include "serchinputbox.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
 
-    ui->setupUi(this);
-    QIcon pix(":/img/img/photo_2022-04-10_19-32-38.jpg");
+    ui->setupUi(this); //default setup//
+
+    //set default main picture//
+
+    /*QIcon pix(":/img/img/photo_2022-04-10_19-32-38.jpg");
     int w = ui->photo->width();
     int h = ui->photo->height();
-    //ui->photo->setIcon(pix);
-    //ui->photo->setIconSize(QSize(w,h));
-    list_sp = ui->ls_sp;
+    ui->photo->setIcon(pix);
+    ui->photo->setIconSize(QSize(w,h)); */
+
+    list_sp = ui->ls_sp; //set def list-spacer to var
+
+    //create default relationships box//
     reletionshipBox *rbox = new reletionshipBox();
     ui->scrollAreaWidgetContents_5->layout()->addWidget(rbox);
     ui->scrollAreaWidgetContents_5->layout()->addItem(new QSpacerItem(20,40,QSizePolicy::Expanding,QSizePolicy::Expanding));
+
+    //create default social service box //
     ssBox *sbox = new ssBox();
     ui->scrollAreaWidgetContents_2->layout()->addWidget(sbox);
     ui->scrollAreaWidgetContents_2->layout()->addItem(new QSpacerItem(20,40,QSizePolicy::Expanding,QSizePolicy::Expanding));
+
+    //create default imgbutton for album//
     db_sp = new QSpacerItem(20,40,QSizePolicy::Expanding,QSizePolicy::Preferred);
     imgButton *db = new imgButton();
     db->SetParams(this,0);
@@ -44,6 +53,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_add_Button_clicked()
 {
+    //create new person in base//
     if(ui->snameBox->text()!="")
     {
     ui->scrollAreaWidgetContents->layout()->removeItem(list_sp);
@@ -61,6 +71,7 @@ void MainWindow::on_add_Button_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
+    //clear all boxes//
     ui->photo->setIcon(QIcon(":/img/img/photo.png"));
     ui->photo->setIconSize(QSize(50,50));
     ui->fnameBox->setText("");
@@ -75,6 +86,7 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::on_photo_clicked()
 {
+    //click on main photo to set new//
     QString path = QFileDialog::getOpenFileName();
     if (path!="")
     {
@@ -91,11 +103,12 @@ void MainWindow::on_photo_clicked()
 
 void MainWindow::on_edit_button_clicked()
 {
-
+    //edit active person//
 }
 
 void MainWindow::AddNewAlbumBut(int id)
 {
+    //func to add new imgbutton //
     if(imglist.size()==id)
     {
     ui->horizontalLayout_10->layout()->removeItem(db_sp);
@@ -107,20 +120,6 @@ void MainWindow::AddNewAlbumBut(int id)
     imglist.append(db);
     ui->tabWidget->setTabText(1,"Альбом[" + QString::number( imglist.size()-1) + "]");
     }
-}
-
-
-bool MainWindow::eventFilter(QObject *target, QEvent *event)
-{
-    if(target == this )
-    {
-        if(event->type() == QEvent::MouseButtonRelease)
-        {
-            ui->search_box->setText("");
-            return true;
-        }
-    }
-    return  false;
 }
 
 
