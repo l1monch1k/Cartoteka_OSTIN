@@ -38,9 +38,6 @@ set(PROJECT_SOURCES
         dialog_photo.h
         dialog_photo.cpp
         dialog_photo.ui
-        serchinputbox.h
-        serchinputbox.cpp
-        serchinputbox.ui
         parameditbox.h
         parameditbox.cpp
         parameditbox.ui
