@@ -63,9 +63,9 @@ text-transform: uppercase;
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>-5</x>
+        <x>380</x>
         <y>0</y>
-        <width>411</width>
+        <width>21</width>
         <height>101</height>
        </rect>
       </property>
