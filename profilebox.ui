@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>411</width>
     <height>100</height>
    </rect>
   </property>
@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">-webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -15px 4px 8px -2px rgba(0,0,0,0.12); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -15px 4px 8px -2px rgba(0,0,0,0.12);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
     <number>0</number>
@@ -50,20 +54,18 @@
    <item>
     <widget class="QWidget" name="widget" native="true">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(177, 155, 128);
-font-family: &quot;Courier New&quot;, Courier, monospace;
-color: #000000;
-font-variant: small-caps;
-font-weight: 700;
-letter-spacing: 1px;
-font-size: 15px;
-text-transform: uppercase;
+      <string notr="true">QWidget#widget
+{
+border: 4px ridge #462e23;
+
+};
+
 </string>
      </property>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>360</x>
         <y>0</y>
         <width>21</width>
         <height>101</height>
@@ -92,7 +94,8 @@ text-transform: uppercase;
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">border: 2px solid #000000;</string>
+       <string notr="true">border: 1px solid #462e23;
+</string>
       </property>
       <property name="text">
        <string>...</string>
@@ -113,11 +116,23 @@ text-transform: uppercase;
         <height>81</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: &quot;Courier New&quot;, Courier, monospace;
+font-size: 20px;
+letter-spacing: 6px;
+word-spacing: 0px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;</string>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QLabel" name="Name">
          <property name="text">
-          <string>ИМЯ</string>
+          <string>Имя</string>
          </property>
         </widget>
        </item>

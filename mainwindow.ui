@@ -681,7 +681,7 @@ border: 2px solid #000000;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(134, 110, 89);</string>
+          <string notr="true"/>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
           <property name="leftMargin">
@@ -702,9 +702,7 @@ border: 2px solid #000000;</string>
           <item row="0" column="0">
            <widget class="QScrollArea" name="scrollArea">
             <property name="styleSheet">
-             <string notr="true">border-right: 2px solid #000000;
-border-bottom: 2px solid #000000;
-border-left: 2px solid #000000;</string>
+             <string notr="true"/>
             </property>
             <property name="frameShape">
              <enum>QFrame::Box</enum>
@@ -727,15 +725,23 @@ border-left: 2px solid #000000;</string>
                <height>613</height>
               </rect>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget#scrollAreaWidgetContents{
+background-color: rgb(134, 110, 89);
+border-right: 2px solid #000000;
+border-bottom: 2px solid #000000;
+border-left: 2px solid #000000;
+}</string>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <property name="spacing">
                <number>20</number>
               </property>
               <property name="leftMargin">
-               <number>5</number>
+               <number>9</number>
               </property>
               <property name="rightMargin">
-               <number>5</number>
+               <number>9</number>
               </property>
               <item>
                <spacer name="ls_sp">
@@ -794,7 +800,7 @@ border-left: 2px solid #000000;</string>
          </property>
          <layout class="QGridLayout" name="gridLayout">
           <property name="leftMargin">
-           <number>0</number>
+           <number>4</number>
           </property>
           <property name="topMargin">
            <number>0</number>
@@ -913,31 +919,6 @@ background-color: transparent;
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QLineEdit" name="fnameBox">
-                  <property name="minimumSize">
-                   <size>
-                    <width>300</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>300</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="inputMask">
-                   <string/>
-                  </property>
-                  <property name="placeholderText">
-                   <string>Имя</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
                  <widget class="QLineEdit" name="snameBox">
                   <property name="minimumSize">
                    <size>
@@ -959,6 +940,31 @@ background-color: transparent;
                   </property>
                   <property name="placeholderText">
                    <string>Фамилия</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="fnameBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Имя</string>
                   </property>
                  </widget>
                 </item>
@@ -1300,7 +1306,7 @@ border-top-right-radius: 11px;
                 <enum>QTabWidget::Rounded</enum>
                </property>
                <property name="currentIndex">
-                <number>3</number>
+                <number>1</number>
                </property>
                <property name="elideMode">
                 <enum>Qt::ElideNone</enum>
@@ -1380,7 +1386,7 @@ border-radius: 0px;
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>832</width>
+                      <width>828</width>
                       <height>221</height>
                      </rect>
                     </property>
@@ -1451,7 +1457,7 @@ border-radius: 0px;
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>834</width>
+                      <width>830</width>
                       <height>167</height>
                      </rect>
                     </property>
@@ -1552,7 +1558,7 @@ border-radius: 0px;
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>834</width>
+                      <width>830</width>
                       <height>223</height>
                      </rect>
                     </property>
